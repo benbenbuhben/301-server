@@ -14,7 +14,7 @@ client.on('error', err => console.error(err));
 
 app.use(cors());
 
-app.get('/', (req, res) => res.send('wat'));
+app.get('/', (req, res) => res.send('This is the root directory. Like rootbeer. Just no beer :('));
 
 app.get('/api/v1/tasks', (req, res) => {
   client.query(`SELECT * from tasks;`)
